@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="grep:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/grep_jar</output-path>
-    <root id="archive" name="grep.jar">
-      <element id="module-output" name="grep" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/args4j/args4j/2.33/args4j-2.33.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>
