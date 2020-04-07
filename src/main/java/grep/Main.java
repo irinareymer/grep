@@ -21,7 +21,7 @@ public class Main {
     @Argument(required = true, usage = "word for searching")
     private String word;
 
-    @Argument(required = true, usage = "file to filter", index = 1)
+    @Argument(required = true, usage = "file to filter")
     private File file;
 
 
@@ -38,5 +38,8 @@ public class Main {
             }
     }
 
-    //Utility grep = new Utility()
+    Utility grep = new Utility(inver,insens,regex,word,file);
+        //todo
+
+
 }
