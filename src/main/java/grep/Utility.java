@@ -24,37 +24,28 @@ public class Utility {
         boolean res = false;
         boolean matches = false;
         boolean contain = false;
-
         if (insens) {
             line = line.toUpperCase();
             word = word.toUpperCase();
         }
-
         if (regex) matches = Pattern.matches(word, line);
         else contain = line.contains(word);
-
         if (matches || contain) res = true;
-
         if (inver) res = !res;
-
         return res;
    }
 
-
     public List<String> fileReader() throws IOException {
         ArrayList<String> res = new ArrayList<>();
-
-            try (BufferedReader buff = new BufferedReader(new FileReader(file))) {
-                String line;
-                while ((line = buff.readLine()) != null){
-                    if (lineReader(line))
-                        res.add(line);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
+        try (BufferedReader buff = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = buff.readLine()) != null) {
+                if (lineReader(line))
+                    res.add(line);
             }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         return res;
     }
-
-
 }
