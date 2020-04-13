@@ -24,7 +24,7 @@ public class Main {
     @Argument(required = true, usage = "word for searching")
     private String word;
 
-    @Argument(required = true, usage = "file to filter")
+    @Argument(required = true, usage = "file to filter", index = 1)
     private File file;
 
 
