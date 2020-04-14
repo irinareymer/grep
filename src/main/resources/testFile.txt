@@ -1,6 +1,7 @@
-qw 1234
-234 qw
-q
+smth 1234
+234 smth
+sSs
 
-90847
+SmTh
+class
 ;

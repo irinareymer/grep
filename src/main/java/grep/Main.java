@@ -1,6 +1,5 @@
 package main.java.grep;
 
-
 import org.kohsuke.args4j.Argument;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
@@ -26,7 +25,6 @@ public class Main {
 
     @Argument(required = true, usage = "file to filter", index = 1)
     private File file;
-
 
     public static void main(String[] args) {
         new Main().commandLineArgument(args);

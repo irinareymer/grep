@@ -3,6 +3,7 @@ package main.java.grep;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Utility {
@@ -28,7 +29,11 @@ public class Utility {
             line = line.toUpperCase();
             word = word.toUpperCase();
         }
-        if (regex) matches = Pattern.matches(word, line);
+        if (regex){
+            Pattern p = Pattern.compile(word);
+            Matcher m = p.matcher(line);
+            matches = m.find();
+        }
         else contain = line.contains(word);
         if (matches || contain) res = true;
         if (inver) res = !res;
@@ -48,4 +53,5 @@ public class Utility {
         }
         return res;
     }
+
 }
