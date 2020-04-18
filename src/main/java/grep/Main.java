@@ -35,7 +35,9 @@ public class Main {
         try {
             parser.parseArgument(args);
         } catch (CmdLineException e) {
-            e.printStackTrace();
+            System.err.println(e.getMessage());
+            System.err.println("Correct input: [-v] [-i] [-r] word inputname.txt");
+            System.exit(1);
         }
 
         Utility grep = new Utility(inver, insens, regex, word, file);
@@ -44,7 +46,8 @@ public class Main {
             for (String line: res)
                 System.out.println(line);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println(e.getMessage());
+            System.exit(1);
         }
 
     }

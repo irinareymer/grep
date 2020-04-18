@@ -49,7 +49,8 @@ public class Utility {
                     res.add(line);
             }
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.err.println(e.getMessage());
+            System.exit(1);
         }
         return res;
     }
