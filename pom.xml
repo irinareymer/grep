@@ -34,7 +34,7 @@
                 <directory>resources</directory>
             </resource>
         </resources>
-        <testSourceDirectory>/src/main/java</testSourceDirectory>
+        <testSourceDirectory>src/main/java</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -76,7 +76,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>part2.recode.java.RecoderLauncher</mainClass>
+                            <mainClass>main.java.grep.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
