@@ -1,6 +1,6 @@
-package test.java;
+package grepTest;
 
-import main.java.grep.Main;
+import grep.Main;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

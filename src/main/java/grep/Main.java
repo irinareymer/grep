@@ -1,4 +1,4 @@
-package main.java.grep;
+package grep;
 
 import org.kohsuke.args4j.Argument;
 import org.kohsuke.args4j.CmdLineException;
